@@ -9,6 +9,10 @@ const profissionaisMelhores = profissionais.map(
   }
 );
 
+const profissionaisMelhores = profissionais.map(profissional => {
+  return profissional + "a";
+})
+
 // 2) Retornar frutas com somente a primeira letra maiúscula
 const frutas = ["maçã", "banana", "Pera", "Melancia", "pêsSSEgO", "jAcA"];
 
@@ -24,7 +28,7 @@ const frutasFormatadas = frutas.map(
     // novaFruta[0] = novaFruta[0].toUpperCase();
     // return novaFruta;
   }
-);
+)
 
 // retornar uma nova array com o nome das alunas com a nota final
 const notasAlunas = [
@@ -94,6 +98,7 @@ const alunasPassantes = notasFinaisAlunas.filter(
 )
 
 // filter(): retorna uma nova array com apenas com elementos que atendem à condição
+
 // 1) Criar nova array somente com números pares
 const num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -167,7 +172,9 @@ const lucro = transacoes.reduce(
 
 
 // sort(): organiza itens da array de acordo com uma verificação
+
 // 1) Organizar números de forma decrescente
+const numDecrescente = [...num].sort((a , b) => b - a);
 
 // 2) Organizar pessoas por ordem alfabética
 
