@@ -28,3 +28,45 @@ fetch("https://pokeapi.co/api/v2/pokemon/ditto/")
     .then(data => {
         console.log('data: ', data)
     })
+
+//     // ---- MEL ---
+// cep_input.addEventListener("blur", function () {
+//     const cep = this.value.replace(/\D/g, "")
+
+//     logradouro_input.value = "..."
+//     complemento_input.value = "..."
+//     bairro_input.value = "..."
+//     localidade_input.value = "..."
+//     uf_input.value = "..."
+
+//     get_data(`https://viacep.com.br/ws/${cep}/json/`)
+//         .then(function(data) {
+//             data = JSON.parse(data)
+//             if (data.erro) {
+//                 cep_input.classList.add("error")
+//                 cep_error.style.display = "block"
+
+//                 logradouro_input.value = ""
+//                 complemento_input.value = ""
+//                 bairro_input.value = ""
+//                 localidade_input.value = ""
+//                 uf_input.value = ""
+//             } else {
+//                 logradouro_input.value = data.logradouro
+//                 complemento_input.value = data.complemento
+//                 bairro_input.value = data.bairro
+//                 localidade_input.value = data.localidade
+//                 uf_input.value = data.uf
+//             }
+//         })
+//         .catch(function(error) {
+//             cep_input.classList.add("error")
+//             cep_error.style.display = "block"
+
+//             logradouro_input.value = ""
+//             complemento_input.value = ""
+//             bairro_input.value = ""
+//             localidade_input.value = ""
+//             uf_input.value = ""
+//         })
+// })
