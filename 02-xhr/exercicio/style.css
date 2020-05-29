@@ -1,0 +1,12 @@
+body{
+    background-color: #000;
+}
+
+#pkmPlaceholder {
+    text-align: center;
+    color: aqua;
+}
+
+img {
+    width: 35rem;
+}
